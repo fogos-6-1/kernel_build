@@ -1,0 +1,8 @@
+{
+  "device": "fogos",
+  "dtbo": [
+    "blair-fogos-evt-overlay.dtbo",
+    "blair-fogos-dvt1-overlay.dtbo"
+  ],
+  "dtb_delete": []
+}

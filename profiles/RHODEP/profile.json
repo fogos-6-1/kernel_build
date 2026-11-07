@@ -1,0 +1,17 @@
+{
+  "device": "rhodep",
+  "dtbo": [
+    "blair-rhodep-evt1-overlay.dtbo",
+    "blair-rhodep-evt2-overlay.dtbo",
+    "blair-rhodep-dvt1-overlay.dtbo",
+    "blair-rhodep-dvt2-overlay.dtbo"
+  ],
+  "dtb_delete": [
+    "/soc/qcom,icnss@C800000:vdd-3.3-ch1-supply",
+    "/soc/qcom,icnss@C800000:qcom,vdd-3.3-ch1-config",
+    "/soc/qcom,rpm-smd/rpm-regulator-ldoa21/regulator-l21:qcom,proxy-consumer-enable",
+    "/soc/qcom,rpm-smd/rpm-regulator-ldoa21/regulator-l21:proxy-supply",
+    "/soc/qcom,rpm-smd/rpm-regulator-ldoa21/regulator-l21:qcom,proxy-consumer-voltage",
+    "/soc/qcom,rpm-smd/rpm-regulator-ldoa21/regulator-l21:qcom,proxy-consumer-current"
+  ]
+}
