@@ -17,6 +17,9 @@ def build_all(b):
     d, t, k = b.dev, b.tech, b.kernel
     b.module(d/'peripherals', KERNEL_SRC=k,
              CONFIG_INPUT_TOUCHSCREEN_MMI='y', CONFIG_ILITEK_ESD='y',
+             CONFIG_INPUT_ILI_ENABLE_DOUBLE_TAP='y',
+             CONFIG_INPUT_CHIPONE_0FLASH_MMI_ENABLE_DOUBLE_TAP='y',
+             CONFIG_BOARD_USES_DOUBLE_TAP_CTRL='y',
              CONFIG_INPUT_MISC_FPC1020_SAVE_TO_CLASS_DEVICE='y')
     common = d/'peripherals/Module.symvers'
     b.module(d/'graphics', KGSL_PATH=d/'graphics', KERNEL_SRC=k, CONFIG_QCOM_KGSL='m')
